@@ -1,15 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
-
+import Footer from "@/components/footer"
+import WeHave from "@/components/wehave"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+       {/* Footer */}
+       <Footer />
+
       {/* Hero Section */}
       <div className="flex flex-col lg:flex-row min-h-[calc(100vh-80px)]">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:px-20 py-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center lg:text-left mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center  mb-8">
             Bringing
             <br />
             Imagination Into
@@ -36,7 +40,8 @@ export default function Home() {
 
         {/* Right Images */}
         <div className="w-full lg:w-1/2 flex items-center justify-center p-4">
-        <div className="w-full h-full max-h-[500px] overflow-hidden rounded-lg">     <Image
+        <div className="w-full h-full max-h-[500px] overflow-hidden rounded-lg">   
+            <Image
               src="/picture.jpg"
               alt="Office workspace with people working on computers"
               width={600}
@@ -67,6 +72,8 @@ export default function Home() {
           </div> */}
         </div>
       </div>
+
+     <WeHave />
     </main>
   )
 }
