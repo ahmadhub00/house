@@ -5,6 +5,8 @@ import Link from "next/link"
 import { ArrowRight, Menu, X } from "lucide-react"
 import Image from "next/image"
 import AboutDropdown from "./Grid/about"
+import FocusDropdown from "./Grid/focus"
+import IndustryDropdown from "./Grid/industry"
 
 export default function Header() {
   const [show, setShow] = useState(true)
@@ -100,7 +102,7 @@ export default function Header() {
             {link === 'About' && hoveredLink === 'About' && (
               <div 
                 ref={dropdownRef}
-                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden w-[35vw] max-w-4xl h-68  bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden w-120 max-w-4xl h-50  bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -114,6 +116,45 @@ export default function Header() {
                 </div>
               </div>
             )}
+
+            {/* Dropdown for Focus section */}
+            {link === 'Focus' && hoveredLink === 'Focus' && (
+              <div 
+                ref={dropdownRef}
+                className="w-120 max-w-4xl h-70 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                onMouseEnter={() => {
+                  if (hoverTimeoutRef.current) {
+                    clearTimeout(hoverTimeoutRef.current)
+                  }
+                  setHoveredLink('Focus')
+                }}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="p-6">
+                  <FocusDropdown />
+                </div>
+              </div>
+            )}
+
+            {/* Dropdown for Industries section */}
+            {link === 'Industries' && hoveredLink === 'Industries' && (
+              <div 
+                ref={dropdownRef}
+                className="w-75 max-w-4xl h-65 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                onMouseEnter={() => {
+                  if (hoverTimeoutRef.current) {
+                    clearTimeout(hoverTimeoutRef.current)
+                  }
+                  setHoveredLink('Industries')
+                }}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="p-6">
+                  <IndustryDropdown />
+                </div>
+              </div>
+            )}
+
           </div>
         ))}
       </nav>
