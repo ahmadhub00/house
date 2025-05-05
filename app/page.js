@@ -13,14 +13,14 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row min-h-[calc(100vh-80px)]">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center mt-15 px-6 lg:px-20 py-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center  mb-8">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-center  mb-8">
             Bringing
             <br />
             Imagination Into
             <br />
             Reality
           </h1>
-          <p className="text-gray-700 mb-8 text-base md:text-lg">
+          <p className="text-gray-700 mb-8 text-base md:text-base">
             Welcome to Best Software House & IT Solutions Company Optimum Tech, a premier provider of world-class
             Software & IT Solutions. Our global presence is marked by a distinguished clientele, renowned for their
             expertise and achievements. At the core of our success is a team of highly skilled professionals, whose
@@ -28,10 +28,10 @@ export default function Home() {
             business visions, startups, or innovative ideas into tangible successes. Partner with us to elevate your
             aspirations to new heights and experience unparalleled growth and achievement.
           </p>
-          <div>
+          <div className="flex justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-8 rounded-full transition-colors"
+              className="inline-flex  gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-8 rounded-full transition-colors"
             >
               Contact Us  
             </Link>

@@ -66,7 +66,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full py-5 px-8 flex items-center justify-between bg-white border-b shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+      className={`w-full py-5 px-8 flex items-center justify-between bg-white  shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -75,8 +75,8 @@ export default function Header() {
           <Image
             src="/logo.webp"
             alt="Optimum Tech Logo"
-            width={210}
-            height={50}
+            width={180}
+            height={47}
             className="mr-2"
           />
         </Link>
@@ -189,7 +189,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="mt-4 bg-[#0D7A8A] text-white px-6 py-3 rounded-full flex items-center justify-center"
+              className="mt-4 bg-[#0D7A8A] text-white px-4 py-1 rounded-full flex items-center justify-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact Us
@@ -203,7 +203,7 @@ export default function Header() {
       <div className="hidden md:block">
         <Link
           href="/contact"
-          className="bg-[#0D7A8A] text-white px-6 py-3 rounded-full flex items-center transition-all hover:bg-[#0A6A78]"
+          className="bg-[#0D7A8A] text-white px-4 py-2 rounded-full flex items-center transition-all hover:bg-[#0A6A78]"
         >
           Contact Us
           <ArrowRight className="ml-2 h-4 w-4" />
