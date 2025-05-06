@@ -54,7 +54,7 @@ export default function WeHave() {
     "/micro.webp",
     "/next.png"
   ].map((src, idx) => (
-    <div key={idx} className="w-[130px] h-[100px] flex items-center justify-center">
+    <div key={idx} className="w-[130px] h-[80px] flex items-center justify-center">
       <Image
         src={src}
         alt="We have worked with"
@@ -67,7 +67,7 @@ export default function WeHave() {
         </div>
         </div>
 
-        <div className="w-full py-16 px-4 bg-white flex flex-col items-center text-center">
+        <div className="w-full mb-10 mt-2 px-4 bg-white flex flex-col items-center text-center">
         <div className="w-full max-w-6xl   text-center  mx-auto">
           <span className="text-[#0D7A8A]  font-bold text-lg md:text-xl">
             We Develop</span>
