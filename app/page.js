@@ -39,8 +39,8 @@ export default function Home() {
         </div>
 
         {/* Right Images */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center p-4">
-        <div className="w-full h-full max-h-[500px] overflow-hidden rounded-lg">   
+        <div className="w-full md:w-full lg:w-1/2 flex items-center justify-center p-4">
+        <div className="w-full h-full max-h-[800px] overflow-hidden rounded-lg">   
             <Image
               src="/picture.jpg"
               alt="Office workspace with people working on computers"
