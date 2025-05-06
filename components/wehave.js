@@ -94,18 +94,18 @@ export default function WeHave() {
         </div>
       </div>
 
-      <div className="w-full text-3xl md:text-3xl font-bold text-center   ">
+      <div className="w-full text-2xl md:text-3xl font-bold text-center mb-8  ">
         <h3>Hire the Best Web and Mobile App Developers</h3>
         </div>
-        <div className="flex items-center  justify-center w-full  px-4 max-w-[1200px] mx-auto gap-[-10px]">
+        <div className="flex flex-col md:flex-row items-center  justify-center w-full  px-4 max-w-[1200px] mx-auto gap-6">
   {/* Left Text */}
-  <div className="w-full md:w-1/2 pl-32 pr-0">
-    <p className="text-gray-700 max-w-[500px] font-normal text-sm mb-0">
+  <div className="w-full md:w-1/2 px-4 text-center md:px-6 ">
+    <p className="text-gray-700  font-normal text-sm md:text-base mb-0">
       Welcome to Optimum Tech, a premier IT solutions provider excelling in web design and software development. 
       Our team, featuring a diverse pool of skilled developers, is ready for dedicated and fixed-time/cost projects. 
       Opt for Optimum Tech, where excellence is a commitment. Specializing in PHP, Laravel, Magento, ReactJS, AngularJS, Node.js, 
       and more, our web developers deliver custom, responsive websites, web apps, and eCommerce solutions tailored to your business needs.
-      <br />
+      <br/> <br/>
       In the realm of mobile app development, our Android, iOS, and cross-platform experts leverage cutting-edge tools 
       like Android Studio, Xcode, Kotlin, Xamarin, PhoneGap, and React Native to craft next-gen applications. 
       Choose Optimum Tech for innovation and proficiency in the latest technologies, propelling your business to new heights. 
@@ -114,16 +114,16 @@ export default function WeHave() {
   </div>
 
   {/* Right Image */}
-  <div className="w-full md:w-1/2  flex justify-center pl-0 ">
-    <img src="/info.webp"  className="mb-0 max-w-[430px] h-auto" />
+  <div className="w-full md:w-1/2 flex justify-center px-4">
+    <img src="/info.webp"  className=" w-full max-w-[400px] rounded-lg shadow-md h-auto" />
   </div>
 </div>
 
-<section className="py-20 px-6 bg-gray-50">
+<section className="py-20 px-6 sm:px-6 bg-gray-50 ">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 px-2">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Offer</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl text-sm md:text-base mx-auto">
             Comprehensive tech solutions to power your business growth and digital transformation
           </p>
         </div>
@@ -132,7 +132,7 @@ export default function WeHave() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md border border-gray-100"
+              className="bg-white p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md border border-gray-100  cursor-default"
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
             >
@@ -140,7 +140,7 @@ export default function WeHave() {
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 text-sm md:text-base">{service.description}</p>
             </div>
           ))}
         </div>

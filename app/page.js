@@ -10,9 +10,9 @@ export default function Home() {
        <Header />
 
       {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row min-h-[calc(100vh-80px)]">
+      <div className="flex flex-col md:flex-row items-center  justify-center w-full px-8 max-w-[1200px] mx-auto gap-2 ">
         {/* Left Content */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center mt-15 px-6 lg:px-20 py-12">
+        <div className="w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center mt-15 md:mt-20 px-6 lg:px-20 py-10">
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold text-center  mb-8">
             Bringing
             <br />
@@ -39,37 +39,17 @@ export default function Home() {
         </div>
 
         {/* Right Images */}
-        <div className="w-full md:w-full lg:w-1/2 flex items-center justify-center p-4">
-        <div className="w-full h-full max-h-[800px] overflow-hidden rounded-lg">   
-            <Image
+        <div className="w-full md:w-1/2 lg:w-1/2 lg:mt-25 flex items-center justify-center mr-2">
+         <Image
               src="/picture.jpg"
               alt="Office workspace with people working on computers"
               width={600}
               height={400}
-              className="w-full h-full object-cover"
-              priority
+              className="w-full max-w-[400px] rounded-lg h-auto object-cover"
+               
             />
-          </div>
-         {/*  <div className="grid grid-cols-2 gap-4">
-            <div className="w-full h-full overflow-hidden rounded-lg">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="Team working in office"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-full h-full overflow-hidden rounded-lg">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="Team collaborating"
-                width={400}
-                height={300}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div> */}
+          
+        
         </div>
       </div>
 
