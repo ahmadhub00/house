@@ -7,6 +7,7 @@ import Image from "next/image"
 import AboutDropdown from "./Grid/about"
 import FocusDropdown from "./Grid/focus"
 import IndustryDropdown from "./Grid/industry"
+import ServicesDropdown from "./Grid/services"
 
 export default function Header() {
   const [show, setShow] = useState(true)
@@ -155,6 +156,24 @@ export default function Header() {
               </div>
             )}
 
+            {/* Dropdown for Industries section */}
+          {link === 'Services' && hoveredLink === 'Services' && (
+              <div 
+                ref={dropdownRef}
+                className="w-75 max-w-4xl h-65 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                onMouseEnter={() => {
+                  if (hoverTimeoutRef.current) {
+                    clearTimeout(hoverTimeoutRef.current)
+                  }
+                  setHoveredLink('Services')
+                }}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="p-6">
+                  <ServicesDropdown />
+                </div>
+              </div>
+            )}     
           </div>
         ))}
       </nav>

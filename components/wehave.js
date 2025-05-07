@@ -42,8 +42,8 @@ export default function WeHave() {
   ]
     return (
         <div>
-        <div className="w-full flex flex-col items-center justify-center py-12 px-6  ">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 ">We Have Worket With</h2>
+        <div className="w-full flex flex-col items-center justify-center mt-12 mb-5 px-6  ">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 ">We Have Worket With</h2>
             <div className="flex justify-between items-center  w-full mx-0 px-0">
   {[
     "/deskbook.webp",
@@ -67,7 +67,7 @@ export default function WeHave() {
         </div>
         </div>
 
-        <div className="w-full mb-10 mt-2 px-4 bg-white flex flex-col items-center text-center">
+        <div className="w-full mb-10 md:mt-10 px-4 bg-white flex flex-col items-center text-center">
         <div className="w-full max-w-6xl   text-center  mx-auto">
           <span className="text-[#0D7A8A]  font-bold text-lg md:text-xl">
             We Develop</span>
