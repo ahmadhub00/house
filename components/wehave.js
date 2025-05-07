@@ -42,30 +42,56 @@ export default function WeHave() {
   ]
     return (
         <div>
-        <div className="w-full flex flex-col items-center justify-center mt-12 mb-5 px-6  ">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 ">We Have Worket With</h2>
-            <div className="flex justify-between items-center  w-full mx-0 px-0">
-  {[
-    "/deskbook.webp",
-    "/pitb.webp",
-    "/ieee.webp",
-    "/sdaia.webp",
-    "/govt.png",
-    "/micro.webp",
-    "/next.png"
-  ].map((src, idx) => (
-    <div key={idx} className="w-[130px] h-[80px] flex items-center justify-center">
-      <Image
-        src={src}
-        alt="We have worked with"
-        width={120}
-        height={80}
-        className="object-contain w-full h-full"
-      />
-         </div>
-  ))}
-        </div>
-        </div>
+          <div className="bg-gray-100 w-full flex flex-col items-center justify-center mt-12 mb-5 px-6 pt-5 pb-5">
+  <h2 className="text-3xl  font-bold text-center mb-3">
+    We Have Worked With
+  </h2>
+
+  <div className="relative overflow-hidden w-full bg-gray-100 py-5">
+  <div className="flex animate-scroll-left gap-6 md:gap-12 w-max">
+    {[
+      { src: "/deskbook.webp", alt: "Deskbook", w: 120, h: 60 },
+      { src: "/pitb.webp", alt: "PITB", w: 110, h: 60 },
+      { src: "/ieee.webp", alt: "IEEE", w: 110, h: 60 },
+      { src: "/sdaia.webp", alt: "SDAIA", w: 130, h: 70 },
+      { src: "/govt.png", alt: "Government", w: 130, h: 70 },
+      { src: "/micro.webp", alt: "Microsoft", w: 130, h: 70 },
+      { src: "/next.png", alt: "Next", w: 110, h: 60 },
+      { src: "/ring neck.webp", alt: "Next", w: 100, h: 50 },
+      { src: "/Many-Face.webp", alt: "Next", w: 100, h: 50 },
+      { src: "/Agile loop.webp", alt: "Next", w: 110, h: 60 },
+      { src: "/next grid.webp", alt: "Next", w: 110, h: 60 },
+      // Duplicates for seamless scroll
+      { src: "/deskbook.webp", alt: "Deskbook", w: 120, h: 60 },
+      { src: "/pitb.webp", alt: "PITB", w: 110, h: 60 },
+      { src: "/ieee.webp", alt: "IEEE", w: 110, h: 60 },
+      { src: "/sdaia.webp", alt: "SDAIA", w: 130, h: 70 },
+      { src: "/govt.png", alt: "Government", w: 130, h: 70 },
+      { src: "/micro.webp", alt: "Microsoft", w: 130, h: 70 },
+      { src: "/next.png", alt: "Next", w: 110, h: 60 },
+      { src: "/ring neck.webp", alt: "Next", w: 100, h: 50 },
+      { src: "/Many-Face.webp", alt: "Next", w: 100, h: 50 },
+      { src: "/Agile loop.webp", alt: "Next", w: 110, h: 60 },
+      { src: "/next grid.webp", alt: "Next", w: 110, h: 60 },
+      ].map((logo, idx) => (
+      <div
+        key={idx}
+        className="w-[90px] md:w-[130px] h-[60px] md:h-[80px] flex items-center justify-center"
+      >
+        <Image
+          src={logo.src}
+          alt={logo.alt}
+          width={logo.w}
+          height={logo.h}
+          className="object-contain"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
+</div>
+
 
         <div className="w-full mb-10 md:mt-10 px-4 bg-white flex flex-col items-center text-center">
         <div className="w-full max-w-6xl   text-center  mx-auto">
@@ -115,14 +141,16 @@ export default function WeHave() {
 
   {/* Right Image */}
   <div className="w-full md:w-1/2 flex justify-center px-4">
-    <img src="/info.webp"  className=" w-full max-w-[400px] rounded-lg shadow-md h-auto" />
+    <img src="/info.webp" 
+     className=" w-full max-w-[400px] rounded-lg object-cover shadow-md h-auto transition-transform duration-200 transform ease-in-out hover:scale-110" />
   </div>
 </div>
 
 <section className="py-20 px-6 sm:px-6 bg-gray-50 ">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 px-2">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Offer</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            What We Offer</h2>
           <p className="text-gray-600 max-w-2xl text-sm md:text-base mx-auto">
             Comprehensive tech solutions to power your business growth and digital transformation
           </p>
@@ -147,6 +175,70 @@ export default function WeHave() {
       </div>
     </section>
     
+   
+    <section className="py-16 px-4 max-w-7xl mx-auto">
+  <div className="relative mb-12 text-center">
+    <h2 className="text-3xl md:text-4xl  font-bold text-center">
+      Our Core Services</h2>
+  </div>
+
+  {/* Wrapper with horizontal scroll on mobile */}
+  <div
+    className="flex flex-col gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 overflow-x-auto md:overflow-x-visible scroll-smooth cursor-grab"
+    style={{ WebkitOverflowScrolling: 'touch' }}
+  >
+    {[
+      {
+        title: 'AI/ML Solution',
+        img: '/microchip.png',
+        desc:
+          'Starting from concept, information architecture, visual identity and UI/UX design, our team delivers dazzling experiences for maximum user engagement.',
+      },
+      {
+        title: 'Mobile Applications',
+        img: '/Mobile app.png',
+        desc:
+          'We build intuitive and engaging Android, iOS and cross-platform apps for businesses, consumers and enterprises that end users love and adapt to them very quickly.',
+      },
+      {
+        title: 'Software Development',
+        img: '/sofware dev.png',
+        desc:
+          'We are a full-cycle custom software product development company that helps your organization with end-to-end custom software application development services.',
+      },
+      {
+        title: 'Web Development',
+        img: '/Web development.png',
+        desc:
+          'Our web developers create custom web and web application solutions. We deliver web presence to help you grow your business using the best web technologies.',
+      },
+    ].map((service, idx) => (
+      <div
+        key={idx}
+        className="group min-w-[280px] md:min-w-0 bg-white hover:bg-teal-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 flex-shrink-0"
+      >
+        <div className="flex justify-center mb-6">
+          <Image
+            src={service.img}
+            alt={service.title + ' Icon'}
+            width={80}
+            height={80}
+            className="object-contain transition-transform duration-300 transform group-hover:scale-110"
+          />
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-4">{service.title}</h3>
+        <p className="text-gray-600 text-sm md:text-base mb-6">{service.desc}</p>
+        <Link
+          href="#"
+          className="inline-flex items-center font-medium hover:text-gray-900"
+        >
+          Read More <ArrowRight className="ml-1 h-4 w-4" />
+        </Link>
+      </div>
+    ))}
+  </div>
+</section>
+
       </div>
     )
 } 

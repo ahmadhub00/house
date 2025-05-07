@@ -76,15 +76,15 @@ export default function Header() {
           <Image
             src="/logo.webp"
             alt="Optimum Tech Logo"
-            width={180}
-            height={47}
-            className="mr-2"
+            width={160}
+            height={45}
+            className="mr-5"
           />
         </Link>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center space-x-6">
+      <nav className="hidden md:flex items-center space-x-6 md:px-10">
         {navLinks.map((link, index) => (
           <div 
             key={index}
@@ -94,7 +94,7 @@ export default function Header() {
           >
             <Link
               href={`/${link.toLowerCase()}`}
-              className="font-bold text-gray-700 hover:text-[#0D7A8A] transition-colors"
+              className="font-bold text-sm text-gray-700 hover:text-[#0D7A8A] transition-colors "
             >
               {link}
             </Link>
@@ -160,7 +160,7 @@ export default function Header() {
           {link === 'Services' && hoveredLink === 'Services' && (
               <div 
                 ref={dropdownRef}
-                className="w-75 max-w-4xl h-65 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-110 max-w-4xl h-58 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -208,7 +208,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="mt-4 bg-[#0D7A8A] text-white px-4 py-1 rounded-full flex items-center justify-center"
+              className="mt-4 bg-[#0D7A8A]  transition-colors text-white text-xs md:text-[9px] px-3 md:px-2 py-1 md:py-0.5 rounded-full flex items-center justify-center"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact Us
@@ -222,7 +222,7 @@ export default function Header() {
       <div className="hidden md:block">
         <Link
           href="/contact"
-          className="bg-[#0D7A8A] text-white px-4 py-2 rounded-full flex items-center transition-all hover:bg-[#0A6A78]"
+          className="bg-[#0D7A8A] text-white px-3 py-2 rounded-full flex items-center transition-all hover:bg-[#0A6A78]"
         >
           Contact Us
           <ArrowRight className="ml-2 h-4 w-4" />

@@ -12,9 +12,9 @@ export default function ServicesDropdown() {
 
         {/* AI/ML */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-        <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:text-white transition-all">
-        <Image   src="/healthcare.png"
-         alt="healthcare"
+        <div className=" p-0 rounded-full group-hover:text-white transition-all">
+        <Image   src="/Ai.png"
+         alt="AI/ML"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -25,15 +25,13 @@ export default function ServicesDropdown() {
           </div>
         </div>
         
-        {/* Legal Feature */}
+        {/* Digital marketing & SEO */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full ] group-hover:text-white transition-all">
-          <Image   src="/legal.png"
-           alt="legal"
-             
-              width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
-        
+          <div className=" p-0 rounded-full ] group-hover:text-white transition-all">
+          <Image   src="/Digital marketing.png"
+           alt="Digital marketing & SEO"
+              width={25}
+              height={15} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
             <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
@@ -41,11 +39,11 @@ export default function ServicesDropdown() {
           </div>
         </div>
         
-        {/* Logistics Feature */}
+        {/* Mobile Applications*/}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/logistics.png"
-           alt="logistics"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/Mobile application.png"
+           alt="Mobile Applications"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -56,11 +54,11 @@ export default function ServicesDropdown() {
             </div>
         </div>
         
-        {/* Finance Feature */}
+        {/* Techinical Resources */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/finance.png"
-           alt="finance"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/Resource.png"
+           alt="Techinical Resources"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -70,11 +68,11 @@ export default function ServicesDropdown() {
                 Techinical Resources</h3>  </div>
         </div>
 
-         {/* Education Feature */}
+         {/* Software Development */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/education.png"
-           alt="education"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/window.png"
+           alt="Software Development"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -84,25 +82,25 @@ export default function ServicesDropdown() {
                 Software Development</h3>  </div>
         </div>
 
-         {/* Social Media Feature */}
+         {/* Technical Tranings */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/social media.png"
-           alt="social media"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/Tranings.png"
+           alt="Technical Tranings"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
             <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
-                Technical Resource </h3>  </div>
+                Technical Tranings </h3>  </div>
         </div>
 
-         {/* Media & OTT Feature */}
+         {/* Web Development */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/media.png"
-           alt="media & ott"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/Web development.png"
+           alt="Web Development"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -112,11 +110,11 @@ export default function ServicesDropdown() {
                 Web Development</h3>  </div>
         </div>
 
-         {/* Insurance Feature */}
+         {/* UX/UI Designing */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/insurance.png"
-           alt="insurance"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/Ui & Ux.png"
+           alt="UX/UI Designing"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -126,11 +124,11 @@ export default function ServicesDropdown() {
                 UX/UI Designing</h3>  </div>
         </div>
 
-        {/* Travel Feature */}
+        {/* E-commerce Stores */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:text-white transition-all">
-          <Image   src="/travel.png"
-           alt="travel"
+          <div className=" p-0 rounded-full group-hover:text-white transition-all">
+          <Image   src="/ecommerce.png"
+           alt="E-commerce Stores"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -140,11 +138,11 @@ export default function ServicesDropdown() {
                 E-commerce Stores Setup</h3>  </div>
         </div>
 
-        {/* Manufacturing Feature */}
+        {/*Social Media Market*/}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/industry.png"
-           alt="manufacturing"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/socialmedia marketing.png"
+           alt="Social Media Market"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -154,11 +152,11 @@ export default function ServicesDropdown() {
                 Social Media Market</h3>  </div>
         </div>
 
-        {/* Retail Feature */}
+        {/* BlockChain Systems */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/retail.png"
-           alt="retail"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/blockchain.png"
+           alt="BlockChain Systems"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
@@ -168,11 +166,11 @@ export default function ServicesDropdown() {
                 BlockChain Systems</h3>  </div>
         </div>
 
-        {/* IT & Telecom Feature */}
+        {/* DevOPs */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/telecon.png"
-           alt="it & telecom"
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
+          <Image   src="/DevOps.png"
+           alt="DevOPs"
              
               width={30}
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
