@@ -10,7 +10,7 @@ export default function ServicesDropdown() {
       {/* <h1 className="text-1xl font-bold mb-4 text-[#0D7A8A] border-b pb-2">About Us</h1> */}
       <div className="grid grid-cols-2  gap-0">
 
-        {/* HealthCare Feature */}
+        {/* AI/ML */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
         <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:text-white transition-all">
         <Image   src="/healthcare.png"
@@ -20,7 +20,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]"> HealthCare</h3>  
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                 AI/ML</h3>  
           </div>
         </div>
         
@@ -35,7 +36,8 @@ export default function ServicesDropdown() {
         
           </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Legal</h3>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Digital marketing & SEO</h3>
           </div>
         </div>
         
@@ -49,7 +51,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
         </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Logistics</h3>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Mobile Applications</h3>
             </div>
         </div>
         
@@ -63,7 +66,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Finance</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Techinical Resources</h3>  </div>
         </div>
 
          {/* Education Feature */}
@@ -76,7 +80,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Education</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Software Development</h3>  </div>
         </div>
 
          {/* Social Media Feature */}
@@ -89,7 +94,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Social Media</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Technical Resource </h3>  </div>
         </div>
 
          {/* Media & OTT Feature */}
@@ -102,7 +108,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
            </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Media & OTT</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Web Development</h3>  </div>
         </div>
 
          {/* Insurance Feature */}
@@ -115,7 +122,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
            </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Insurance</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                UX/UI Designing</h3>  </div>
         </div>
 
         {/* Travel Feature */}
@@ -128,7 +136,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
             </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Travel</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                E-commerce Stores Setup</h3>  </div>
         </div>
 
         {/* Manufacturing Feature */}
@@ -141,7 +150,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
            </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Manufacturing</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Social Media Market</h3>  </div>
         </div>
 
         {/* Retail Feature */}
@@ -154,7 +164,8 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
            </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Retail</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                BlockChain Systems</h3>  </div>
         </div>
 
         {/* IT & Telecom Feature */}
@@ -167,34 +178,10 @@ export default function ServicesDropdown() {
               height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
             </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">IT & Telecom</h3>  </div>
+            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                DevOPs</h3>  </div>
         </div>
 
-        {/* Construction Feature */}
-        <div className="group flex items-start space-x-4 hover:bg-gray-50 p- rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/construction.png"
-           alt="construction"
-             
-              width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
-           </div>
-          <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">Construction</h3>  </div>
-        </div>
-
-        {/* MarketPlace Feature */}
-        <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
-          <Image   src="/marketplace.png"
-           alt="marketplace"
-             
-              width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
-           </div>
-          <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">MarketPlace</h3>  </div>
-        </div>
       </div>
     </div>
   )
