@@ -21,7 +21,10 @@ export default function MethodologyDropdown() {
          </div>
           <div>
             <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
-            Discovery </h3>  
+            Discovery </h3> 
+            <p className="text-gray-600 text-[10px]">
+            Transforming ideas into a measurable scope with functional UI/UX Design. </p>
+             
           </div>
         </div>
         
