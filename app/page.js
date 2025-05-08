@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Right Images */}
-        <div className="w-full md:w-1/2 lg:w-1/2 lg:mt-20 flex items-center justify-center mr-2">
+        <div className="w-full md:w-1/2 lg:w-1/2 lg:mt-22 flex items-center justify-center mr-2">
   <Image
     src="/picture.jpg"
     alt="Office workspace with people working on computers"

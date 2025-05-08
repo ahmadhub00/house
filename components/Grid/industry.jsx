@@ -11,13 +11,13 @@ export default function IndustryDropdown() {
       <div className="grid grid-cols-2  gap-0">
 
         {/* HealthCare Feature */}
-        <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-        <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:text-white transition-all">
+        <div className="group flex items-start space-x-3 hover:bg-gray-50 p-1 rounded-lg transition-all">
+        <div className=" p-0 rounded-full group-hover:text-white transition-all">
         <Image   src="/healthcare.png"
          alt="healthcare"
              
               width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
+              height={20} className="h-7 w-7 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
             <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]"> HealthCare</h3>  
@@ -26,7 +26,7 @@ export default function IndustryDropdown() {
         
         {/* Legal Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full ] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full ] group-hover:text-white transition-all">
           <Image   src="/legal.png"
            alt="legal"
              
@@ -41,7 +41,7 @@ export default function IndustryDropdown() {
         
         {/* Logistics Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/logistics.png"
            alt="logistics"
              
@@ -55,7 +55,7 @@ export default function IndustryDropdown() {
         
         {/* Finance Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/finance.png"
            alt="finance"
              
@@ -68,7 +68,7 @@ export default function IndustryDropdown() {
 
          {/* Education Feature */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/education.png"
            alt="education"
              
@@ -81,7 +81,7 @@ export default function IndustryDropdown() {
 
          {/* Social Media Feature */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/social media.png"
            alt="social media"
              
@@ -94,7 +94,7 @@ export default function IndustryDropdown() {
 
          {/* Media & OTT Feature */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/media.png"
            alt="media & ott"
              
@@ -107,7 +107,7 @@ export default function IndustryDropdown() {
 
          {/* Insurance Feature */}
          <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/insurance.png"
            alt="insurance"
              
@@ -120,7 +120,7 @@ export default function IndustryDropdown() {
 
         {/* Travel Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:text-white transition-all">
           <Image   src="/travel.png"
            alt="travel"
              
@@ -133,7 +133,7 @@ export default function IndustryDropdown() {
 
         {/* Manufacturing Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/industry.png"
            alt="manufacturing"
              
@@ -146,7 +146,7 @@ export default function IndustryDropdown() {
 
         {/* Retail Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/retail.png"
            alt="retail"
              
@@ -159,7 +159,7 @@ export default function IndustryDropdown() {
 
         {/* IT & Telecom Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/telecon.png"
            alt="it & telecom"
              
@@ -171,8 +171,8 @@ export default function IndustryDropdown() {
         </div>
 
         {/* Construction Feature */}
-        <div className="group flex items-start space-x-4 hover:bg-gray-50 p- rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+        <div className="group flex items-start ml-1 space-x-4 hover:bg-gray-50 p- rounded-lg transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/construction.png"
            alt="construction"
              
@@ -185,7 +185,7 @@ export default function IndustryDropdown() {
 
         {/* MarketPlace Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full  group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full  group-hover:text-white transition-all">
           <Image   src="/marketplace.png"
            alt="marketplace"
              

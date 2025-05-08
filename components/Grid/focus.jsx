@@ -11,7 +11,7 @@ export default function FocusDropdown() {
 
         {/* Enterprise Applications */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -23,7 +23,7 @@ export default function FocusDropdown() {
         
         {/* Artificial Intelligence */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -35,7 +35,7 @@ export default function FocusDropdown() {
         
         {/* Digital Commerce */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -47,7 +47,7 @@ export default function FocusDropdown() {
         
         {/*Technology Integration */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -59,7 +59,7 @@ export default function FocusDropdown() {
 
           {/* Business Automation */}
           <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -71,7 +71,7 @@ export default function FocusDropdown() {
 
           {/*BI & Analytics  */}
           <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Star className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>

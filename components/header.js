@@ -9,6 +9,7 @@ import FocusDropdown from "./Grid/focus"
 import IndustryDropdown from "./Grid/industry"
 import ServicesDropdown from "./Grid/services"
 import MethodologyDropdown from "./Grid/methodology"
+import WorkDropdown from "./Grid/work"
 
 export default function Header() {
   const [show, setShow] = useState(true)
@@ -68,10 +69,10 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full py-5 px-8 flex items-center justify-between bg-white  shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+      className={`w-full py-5 px-8 flex items-center justify-between bg-white  shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out 
+        ${
         show ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
+      }`}>
       <div className="flex items-center">
         <Link href="/">
           <Image
@@ -79,7 +80,7 @@ export default function Header() {
             alt="Optimum Tech Logo"
             width={160}
             height={45}
-            className="mr-5"
+            className="w-40 md:w-48 h-auto mr-5"
           />
         </Link>
       </div>
@@ -104,7 +105,7 @@ export default function Header() {
             {link === 'About' && hoveredLink === 'About' && (
               <div 
                 ref={dropdownRef}
-                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden w-120 max-w-4xl h-50  bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden w-120 max-w-4xl h-47  bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -113,7 +114,7 @@ export default function Header() {
                 }}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="p-6">
+                <div className="p-4">
                   <AboutDropdown />
                 </div>
               </div>
@@ -123,7 +124,7 @@ export default function Header() {
             {link === 'Focus' && hoveredLink === 'Focus' && (
               <div 
                 ref={dropdownRef}
-                className="w-120 max-w-4xl h-70 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-120 max-w-4xl h-66 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -132,7 +133,7 @@ export default function Header() {
                 }}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="p-6">
+                <div className="p-4">
                   <FocusDropdown />
                 </div>
               </div>
@@ -142,7 +143,7 @@ export default function Header() {
             {link === 'Industries' && hoveredLink === 'Industries' && (
               <div 
                 ref={dropdownRef}
-                className="w-75 max-w-4xl h-65 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-70 max-w-4xl h-64 absolute top-full left-1/2 transform -translate-x-1/2 mt-4 overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -151,7 +152,7 @@ export default function Header() {
                 }}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="p-6">
+                <div className="p-4">
                   <IndustryDropdown />
                 </div>
               </div>
@@ -161,7 +162,7 @@ export default function Header() {
           {link === 'Services' && hoveredLink === 'Services' && (
               <div 
                 ref={dropdownRef}
-                className="w-110 max-w-4xl h-58 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-105 max-w-4xl h-55 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -170,18 +171,18 @@ export default function Header() {
                 }}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="p-6">
+                <div className="p-3">
                   <ServicesDropdown />
                 </div>
               </div>
             )}     
 
 
-            {/* Dropdown for Services section */}
+            {/* Dropdown for Methodologysection */}
           {link === 'Methodology' && hoveredLink === 'Methodology' && (
               <div 
                 ref={dropdownRef}
-                className="w-110 max-w-4xl h-35 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-120 max-w-4xl h-35 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
@@ -190,8 +191,27 @@ export default function Header() {
                 }}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="p-6">
+                <div className="p-4">
                   <MethodologyDropdown />
+                </div>
+              </div>
+            )}     
+
+             {/* Dropdown for Methodologysection */}
+          {link === 'Work' && hoveredLink === 'Work' && (
+              <div 
+                ref={dropdownRef}
+                className="w-123 max-w-4xl h-48 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                onMouseEnter={() => {
+                  if (hoverTimeoutRef.current) {
+                    clearTimeout(hoverTimeoutRef.current)
+                  }
+                  setHoveredLink('Work')
+                }}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="p-3">
+                  <WorkDropdown />
                 </div>
               </div>
             )}     

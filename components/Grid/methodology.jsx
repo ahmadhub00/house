@@ -17,10 +17,11 @@ export default function MethodologyDropdown() {
          alt="Discovery "
              
               width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
+              height={20} 
+              className="h-7 w-10 text-[#0D7A8A] group-hover:text-white" />
          </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+            <h3 className="text-[12px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
             Discovery </h3> 
             <p className="text-gray-600 text-[10px]">
             Transforming ideas into a measurable scope with functional UI/UX Design. </p>
@@ -33,12 +34,16 @@ export default function MethodologyDropdown() {
           <div className=" p-0 rounded-full ] group-hover:text-white transition-all">
           <Image   src="/execution.png"
            alt="Project Execution"
-              width={25}
-              height={15} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
+              width={30}
+              height={20}
+               className="h-7 w-9 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+            <h3 className="text-[12px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
                 Project Execution</h3>
+                <p className="text-gray-600 text-[10px]">
+          Get to know how we balance the critical triangle of Cost, Time and Scope </p>
+            
           </div>
         </div>
         
@@ -49,11 +54,15 @@ export default function MethodologyDropdown() {
            alt="Dedicated Developers"
              
               width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
+              height={20}
+               className="h-7 w-7 text-[#0D7A8A] group-hover:text-white" />
         </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+            <h3 className="text-[12px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
                 Dedicated Developers</h3>
+                <p className="text-gray-600 text-[10px]">
+           Form an expert who works remotely, under your supervision </p>
+            
             </div>
         </div>
         
@@ -64,11 +73,15 @@ export default function MethodologyDropdown() {
            alt="Continuous Improvement"
              
               width={30}
-              height={20} className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
+              height={20} className="h-7 w-8 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
-            <h3 className="text-[11px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
-                Continuous Improvement</h3>  </div>
+            <h3 className="text-[12px] font-semibold mb-0 group-hover:text-[#0D7A8A]">
+                Continuous Improvement</h3> 
+                <p className="text-gray-600 text-[10px]">
+         Proactive review at every stage for the efficent delivery.</p>
+            
+             </div>
         </div>
 
          

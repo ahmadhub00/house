@@ -10,7 +10,7 @@ export default function AboutDropdown() {
       <div className="grid grid-cols-2  gap-0">
         {/* Team Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Users className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -23,7 +23,7 @@ export default function AboutDropdown() {
         
         {/* How we Work Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Handshake className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -38,7 +38,7 @@ export default function AboutDropdown() {
         
         {/* Contact Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <Phone className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
@@ -53,7 +53,7 @@ export default function AboutDropdown() {
         
         {/* Careers Feature */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-all">
-          <div className="bg-[#e6f7f9] p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
+          <div className=" p-0 rounded-full group-hover:bg-[#0D7A8A] group-hover:text-white transition-all">
             <GraduationCap className="h-6 w-6 text-[#0D7A8A] group-hover:text-white" />
           </div>
           <div>
