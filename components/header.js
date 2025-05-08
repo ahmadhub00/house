@@ -8,6 +8,7 @@ import AboutDropdown from "./Grid/about"
 import FocusDropdown from "./Grid/focus"
 import IndustryDropdown from "./Grid/industry"
 import ServicesDropdown from "./Grid/services"
+import MethodologyDropdown from "./Grid/methodology"
 
 export default function Header() {
   const [show, setShow] = useState(true)
@@ -156,7 +157,7 @@ export default function Header() {
               </div>
             )}
 
-            {/* Dropdown for Industries section */}
+            {/* Dropdown for Services section */}
           {link === 'Services' && hoveredLink === 'Services' && (
               <div 
                 ref={dropdownRef}
@@ -171,6 +172,26 @@ export default function Header() {
               >
                 <div className="p-6">
                   <ServicesDropdown />
+                </div>
+              </div>
+            )}     
+
+
+            {/* Dropdown for Services section */}
+          {link === 'Methodology' && hoveredLink === 'Methodology' && (
+              <div 
+                ref={dropdownRef}
+                className="w-110 max-w-4xl h-35 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                onMouseEnter={() => {
+                  if (hoverTimeoutRef.current) {
+                    clearTimeout(hoverTimeoutRef.current)
+                  }
+                  setHoveredLink('Methodology')
+                }}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="p-6">
+                  <MethodologyDropdown />
                 </div>
               </div>
             )}     
