@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useState } from "react"
 import { Code, Globe, Database, Layout, Shield, HeartHandshake } from "lucide-react"
+import { Circle, FileCode2, CreditCard, CheckSquare } from "lucide-react"
 
 export default function WeHave() { 
     const [hoveredCard, setHoveredCard] = useState(null)
@@ -39,6 +40,33 @@ export default function WeHave() {
       title: "IT Consulting",
       description: "Strategic guidance to help your business leverage technology for growth and competitive advantage."
     }
+  ]
+
+  const steps = [
+    {
+      icon: <Circle className="w-12 h-12 text-indigo-500" />,
+      title: "Discover",
+      description:
+        "We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.",
+    },
+    {
+      icon: <FileCode2 className="w-12 h-12 text-amber-500" />,
+      title: "Design",
+      description:
+        "Our design approach is to simplify. We embrace the joy in creating something unique that is easy for end users.",
+    },
+    {
+      icon: <CreditCard className="w-12 h-12 text-emerald-500" />,
+      title: "Build",
+      description:
+        "Using modern technologies, we build with efficiency and skill, creating flexible and scalable business-driven solutions.",
+    },
+    {
+      icon: <CheckSquare className="w-12 h-12 text-blue-500" />,
+      title: "Deliver",
+      description:
+        "We take an iterative approach to both our work and our practice, always looking for ways to improve what we do.",
+    },
   ]
     return (
         <div>
@@ -238,6 +266,32 @@ export default function WeHave() {
     ))}
   </div>
 </section>
+<section>
+  <div className="w-full py-12 px-4 md:px-6 bg-white">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+      We Simplify Software Development Process
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <div className="mb-4">{step.icon}</div>
+
+          {index < steps.length - 1 && (
+            <div className="hidden lg:block absolute translate-x-[140px] mt-6">
+              <div className="w-24 border-t-2 border-dashed border-gray-300"></div>
+            </div>
+          )}
+
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">{step.title}</h3>
+          <p className="text-center text-gray-600">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+  </section>
 
       </div>
     )
