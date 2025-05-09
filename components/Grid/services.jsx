@@ -8,8 +8,14 @@ export default function ServicesDropdown() {
   return (
     <div className="w-full">
       {/* <h1 className="text-1xl font-bold mb-4 text-[#0D7A8A] border-b pb-2">About Us</h1> */}
+     <div className="flex flex-row  "> 
+       <img  src="/image.png"
+         alt="team image"
+             
+           className="h-50 w-40 rounded-1xl p-2" />
+      
       <div className="grid grid-cols-2  gap-0">
-
+      
         {/* AI/ML */}
         <div className="group flex items-start space-x-4 hover:bg-gray-50 p-1 rounded-lg transition-all">
         <div className=" p-0 rounded-full group-hover:text-white transition-all">
@@ -180,6 +186,7 @@ export default function ServicesDropdown() {
                 DevOPs</h3>  </div>
         </div>
 
+      </div>
       </div>
     </div>
   )

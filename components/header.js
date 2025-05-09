@@ -162,7 +162,7 @@ export default function Header() {
           {link === 'Services' && hoveredLink === 'Services' && (
               <div 
                 ref={dropdownRef}
-                className="w-105 max-w-4xl h-55 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
+                className="w-140 max-w-4xl h-55 absolute top-full left-1/2 transform -translate-x-1/2  overflow-hidden   bg-white shadow-lg rounded-lg z-50 border border-gray-100"
                 onMouseEnter={() => {
                   if (hoverTimeoutRef.current) {
                     clearTimeout(hoverTimeoutRef.current)
