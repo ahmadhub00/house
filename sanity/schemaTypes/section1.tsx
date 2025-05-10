@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity'
 
-export const herosection= defineType({
-  name: 'herosection',
-  title: 'herosection',
+export const section1 = defineType({
+  name: 'section1',
+  title: 'section1',
   type: 'document',
   fields: [
     defineField({
@@ -10,6 +10,15 @@ export const herosection= defineType({
       title: 'Service Title',
       type: 'text',
       rows: 3
+    }),
+    defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+      },
     }),
     defineField({
       name: 'image',
