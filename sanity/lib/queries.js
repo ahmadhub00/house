@@ -30,5 +30,15 @@ export const getsection1 = `*[_type == "section1"] | order(publishedAt desc){
       asset->{url}
     }
   }`
+
+  export const getSection3 = `*[_type == "section3"][0]{
+    title,
+    line1,
+    line2,
+    line3,
+    line4,
+    exploreLink
+  }
+`;
   
   

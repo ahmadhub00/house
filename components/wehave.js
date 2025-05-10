@@ -73,32 +73,6 @@ export default function WeHave() {
           
 
 
-        <div className="w-full mb-10 md:mt-10 px-4 bg-white flex flex-col items-center text-center">
-        <div className="w-full max-w-6xl   text-center  mx-auto">
-          <span className="text-[#0D7A8A]  font-bold text-lg md:text-xl">
-            We Develop</span>
-  
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-6 mb-4">
-            AI Solutions For Your Business</h2>
-  
-          <p className="text-gray-700 font-normal text-sm md:text-base mb-10 ">
-            We Also Help AI Startups To Create MVP, Prototype & Fundraising Custom Solutions
-          </p>
-  
-          <div className="w-full max-w-3xl bg-[#e6866e] rounded-md p-6 mb-10 mx-auto ">
-            <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
-              Manyface</h3>
-            <p className="text-white text-sm md:text-base">
-              Our Own Internationally Launched AI Product</p>
-          </div>
-          <Link
-            href="/explore"
-            className="text-sm md:text-base inline-flex items-center bg-[#0D7A8A] text-white px-6 py-3 rounded-full hover:bg-[#0A6A78] transition-colors">
-            Explore More
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </div>
-      </div>
 
       <div className="w-full text-2xl md:text-3xl font-bold text-center mb-8  ">
         <h3>Hire the Best Web and Mobile App Developers</h3>
