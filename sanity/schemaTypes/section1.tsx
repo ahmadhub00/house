@@ -7,7 +7,7 @@ export const section1 = defineType({
   fields: [
     defineField({
       name: 'title',
-      title: 'Service Title',
+      title: 'Title',
       type: 'text',
       rows: 3
     }),
