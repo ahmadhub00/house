@@ -1,4 +1,3 @@
-
 export const getAllServicesQuery = `*[_type == "service"] | order(publishedAt desc){
     _id,
     title,
@@ -9,9 +8,8 @@ export const getAllServicesQuery = `*[_type == "service"] | order(publishedAt de
     },
     description,
     publishedAt
-  }`
-  
-  
+  }`;
+
 export const getsection1 = `*[_type == "section1"] | order(publishedAt desc){
     _id,
     title,
@@ -21,32 +19,42 @@ export const getsection1 = `*[_type == "section1"] | order(publishedAt desc){
     },
     description,
     publishedAt
-  }`
+  }`;
 
-  export const getsection2 = `*[_type == "section2"][0]{
+export const getsection2 = `*[_type == "section2"][0]{
     title,
     slug,
     logos[]{
       asset->{url}
     }
-  }`
+  }`;
 
-  export const getsection3 = `*[_type == "section3"][0]{
+export const getsection3 = `*[_type == "section3"][0]{
     title,
     line1,
     line2,
     line3,
     line4,
     exploreLink
-  }`
-  export const getsection4 = `*[_type == "section4"][0]{
+  }`;
+export const getsection4 = `*[_type == "section4"][0]{
    title,
     slug,
     image{
       asset->{url}
     },
     description
-  }`
-  ;
-  
-  
+  }`;
+
+export const getsection5 = `*[_type == "section5"][0]{
+    title,
+     slug,
+     line,
+     item[]{
+    icon {
+      asset->{url}
+    },
+    title,
+    description
+  }
+}`;

@@ -3,45 +3,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useState } from "react"
-import { Code, Globe, Database, Layout, Shield, HeartHandshake } from "lucide-react"
 import { Circle, FileCode2, CreditCard, CheckSquare } from "lucide-react"
 
 export default function WeHave() { 
     const [hoveredCard, setHoveredCard] = useState(null)
   
-  const services = [
-    {
-      icon: <Code className="h-10 w-10" />,
-      title: "Custom Software Development",
-      description: "Tailored software solutions designed to address your unique business challenges and requirements."
-    },
-    {
-      icon: <Globe className="h-10 w-10" />,
-      title: "Web Development",
-      description: "Responsive, user-friendly websites and web applications that enhance your digital presence."
-    },
-    {
-      icon: <Database className="h-10 w-10" />,
-      title: "Database Solutions",
-      description: "Robust database architecture and management to ensure your data is secure, accessible, and optimized."
-    },
-    {
-      icon: <Layout className="h-10 w-10" />,
-      title: "UI/UX Design",
-      description: "Intuitive and engaging interfaces that prioritize user experience and drive customer satisfaction."
-    },
-    {
-      icon: <Shield className="h-10 w-10" />,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your digital assets and maintain customer trust."
-    },
-    {
-      icon: <HeartHandshake className="h-10 w-10" />,
-      title: "IT Consulting",
-      description: "Strategic guidance to help your business leverage technology for growth and competitive advantage."
-    }
-  ]
-
+ 
   const steps = [
     {
       icon: <img src="/Discover.png" alt="Discover" className="w-12 h-12 text-indigo-500" />,
@@ -76,35 +43,7 @@ export default function WeHave() {
 
      
 
-<section className="py-20 px-6 sm:px-6  ">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 px-2">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What We Offer</h2>
-          <p className="text-gray-600 max-w-2xl text-sm md:text-base mx-auto">
-            Comprehensive tech solutions to power your business growth and digital transformation
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-lg shadow-xl transition-all duration-300 hover:shadow-md border border-gray-100  cursor-default"
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}
-            >
-              <div className={`text-teal-600 mb-6 transition-transform duration-300 ${hoveredCard === index ? 'scale-110' : ''}`}>
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600 text-sm md:text-base">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    
     <section className=" mx-auto flex items-center justify-center  " >
   <div className="w-full max-w-7xl px-4 ">
   <div className="w-full max-w-5xl mx-auto py-12 px-4 md:px-6 bg-white rounded-lg shadow-xl">

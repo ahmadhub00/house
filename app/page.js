@@ -6,12 +6,13 @@ import Section1 from "/components/section1";
 import Section2 from "/components/section2";
 import Section3 from "/components/section3";
 import Section4 from "/components/section4";
+import Section5 from "/components/section5";
+
 
 import { client } from "../sanity/lib/sanity";
 import { getAllServicesQuery } from "../sanity/lib/queries";
 
 export default async function Home() {
-  const services = await client.fetch(getAllServicesQuery);
   
   return (
     <main className="min-h-screen">
@@ -30,6 +31,10 @@ export default async function Home() {
       {/* Section4 */}
       <Section4 />
 
+
+      {/* Section5 */}
+      <Section5 />
+      
       <WeHave />
 
       {/* Footer */}

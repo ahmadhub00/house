@@ -2,7 +2,7 @@ import { getsection4 } from "../sanity/lib/queries";
 import { client } from "../sanity/lib/sanity";
 import { urlFor } from "../sanity/lib/image";
 
-export default async function Section3() {
+export default async function Section4() {
   const section4 = await client.fetch(getsection4);
 
 return (
