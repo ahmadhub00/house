@@ -74,7 +74,7 @@ return (
             >
               <div className={`text-teal-600 mb-6  transition-transform duration-300 ${hoveredCard === index ? 'scale-110' : ''}`}>
               <img
-                  className="h-10 w-10 filter sepia saturate-100 hue-rotate-90" 
+                  className="h-10 w-10 " 
                   src={urlFor(dataa.icon).url()}  
                   alt={dataa.title}
                 />
