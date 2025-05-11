@@ -14,11 +14,12 @@ export const section3 = defineType({
         name: 'line1',
         title: 'Line1',
         type: 'string',
+        /* validation: Rule => Rule.required(), */
       },
       {
         name: 'line2',
         title: 'Line2',
-        type: 'text',
+        type: 'string',
       },
       {
         name: 'line3',
@@ -28,7 +29,7 @@ export const section3 = defineType({
       {
         name: 'line4',
         title: 'Line4',
-        type: 'text',
+        type: 'string',
       },
       {
         name: 'exploreLink',

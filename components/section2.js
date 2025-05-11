@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import { getsection2 } from "../sanity/lib/queries";
-import { urlFor } from "../sanity/lib/image";
 import { client } from "../sanity/lib/sanity";
+import { urlFor } from "../sanity/lib/image";
 
 export default async function Section2() {
   const section2 = await client.fetch(getsection2);
