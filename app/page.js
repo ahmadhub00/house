@@ -1,4 +1,3 @@
-
 import Header from "/components/header";
 import Footer from "/components/footer";
 import WeHave from "/components/wehave";
@@ -13,28 +12,26 @@ import { client } from "../sanity/lib/sanity";
 import { getAllServicesQuery } from "../sanity/lib/queries";
 
 export default function Home() {
-  
   return (
     <main className="min-h-screen">
       {/* Header */}
       <Header />
 
       {/* Section1 */}
-     <Section1 />
+      <Section1 />
 
-     {/* Section2 */}
-     <Section2 />
+      {/* Section2 */}
+      <Section2 />
 
-     {/* Section3 */}
-     <Section3 />
+      {/* Section3 */}
+      <Section3 />
 
       {/* Section4 */}
       <Section4 />
 
-
       {/* Section5 */}
       <Section5 />
-      
+
       {/* Section6 */}
       <Section6 />
 

@@ -58,3 +58,15 @@ export const getsection5 = `*[_type == "section5"][0]{
     description
   }
 }`;
+
+export const getsection6 = `*[_type == "section6"][0]{
+  title,
+   slug,
+   item[]{
+  icon {
+    asset->{url}
+  },
+  title,
+  description
+}
+}`;

@@ -1,56 +1,55 @@
-
-
-import { defineType, defineField } from 'sanity';
+import { defineType, defineField } from "sanity";
 
 export const section6 = defineType({
-  name: 'section5',
-  title: 'section5',
-  type: 'document',
+  name: "section6",
+  title: "section6",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      name: "title",
+      title: "Title",
+      type: "string",
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
       options: {
-        source: 'title',
+        source: "title",
         maxLength: 96,
       },
     },
     {
-      name: 'item',
-      title: 'Items',
-      type: 'array',
+      name: "item",
+      title: "Items",
+      type: "array",
       of: [
         {
-          type: 'object',
+          type: "object",
           fields: [
             {
-              name: 'icon',
-              title: 'Icon',
-              type: 'image',  
+              name: "icon",
+              title: "Icon",
+              type: "image",
               options: {
                 hotspot: true,
               },
             },
             {
-              name: 'title',
-              title: ' Title',
-              type: 'string',
+              name: "title",
+              title: " Title",
+              type: "string",
             },
             {
-              name: 'description',
-              title: 'Description',
-              type: 'text',
+              name: "description",
+              title: "Description",
+              type: "text",
             },
           ],
         },
       ],
-      validation: Rule => Rule.max(6).error('You can only add up to 6 items.')
+      validation: (Rule) =>
+        Rule.max(6).error("You can only add up to 6 items."),
     },
   ],
 });

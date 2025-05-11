@@ -1,26 +1,23 @@
-"use client"
-import { useEffect, useState } from "react"
+"use client";
+import { useEffect, useState } from "react";
 
 import { getsection5 } from "../sanity/lib/queries";
 import { client } from "../sanity/lib/sanity";
 import { urlFor } from "../sanity/lib/image";
-import { Code, Globe, Database, Layout, Shield, HeartHandshake } from "lucide-react"
 
-export default  function Section5() {
-   
-    const [section5, setSection5] = useState(null);
-  const [hoveredCard, setHoveredCard] = useState(null)
+export default function Section5() {
+  const [section5, setSection5] = useState(null);
+  const [hoveredCard, setHoveredCard] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-        const data = await client.fetch(getsection5);
+      const data = await client.fetch(getsection5);
       setSection5(data);
     };
     fetchData();
   }, []);
- 
 
-/* const services = [
+  /* const services = [
     {
       icon: <Code className="h-10 w-10" />,
       title: "Custom Software Development",
@@ -52,16 +49,18 @@ export default  function Section5() {
       description: "Strategic guidance to help your business leverage technology for growth and competitive advantage."
     }
   ] */
-return (
-<section className="py-20 px-6 sm:px-6  ">
+  return (
+    <section className="py-20 px-6 sm:px-6  ">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 px-2">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {/* What We Offer */}
-            {section5?.title}</h2>
+            {section5?.title}
+          </h2>
           <p className="text-gray-600 max-w-2xl text-sm md:text-base mx-auto">
             {/* Comprehensive tech solutions to power your business growth and digital transformation */}
-            {section5?.line}</p>
+            {section5?.line}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -72,20 +71,24 @@ return (
               onMouseEnter={() => setHoveredCard(index)}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <div className={`text-teal-600 mb-6  transition-transform duration-300 ${hoveredCard === index ? 'scale-110' : ''}`}>
-              <img
-                  className="h-10 w-10 " 
-                  src={urlFor(data.icon).url()}  
+              <div
+                className={`mb-6  transition-transform duration-300 ${hoveredCard === index ? "scale-110" : ""}`}
+              >
+                <img
+                  className="h-10 w-10 "
+                  src={urlFor(data.icon).url()}
                   alt={data.title}
                 />
-                
               </div>
-              
-              <h3 className="text-xl font-semibold mb-3">{data.title}</h3>
-              <p className="text-gray-600 text-sm md:text-base">{data.description}</p>
+
+              <h3 className="text-xl font-semibold mb-3 text-teal-800 ">{data.title}</h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                {data.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
     </section>
-)}
+  );
+}
