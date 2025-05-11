@@ -65,7 +65,7 @@ return (
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {section5?.item?.map((dataa, index) => (
+          {section5?.item?.map((data, index) => (
             <div
               key={index}
               className="bg-white p-8 rounded-lg shadow-xl transition-all duration-300 hover:shadow-md border border-gray-100  cursor-default"
@@ -75,14 +75,14 @@ return (
               <div className={`text-teal-600 mb-6  transition-transform duration-300 ${hoveredCard === index ? 'scale-110' : ''}`}>
               <img
                   className="h-10 w-10 " 
-                  src={urlFor(dataa.icon).url()}  
-                  alt={dataa.title}
+                  src={urlFor(data.icon).url()}  
+                  alt={data.title}
                 />
                 
               </div>
               
-              <h3 className="text-xl font-semibold mb-3">{dataa.title}</h3>
-              <p className="text-gray-600 text-sm md:text-base">{dataa.description}</p>
+              <h3 className="text-xl font-semibold mb-3">{data.title}</h3>
+              <p className="text-gray-600 text-sm md:text-base">{data.description}</p>
             </div>
           ))}
         </div>

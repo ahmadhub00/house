@@ -8,8 +8,6 @@ import { Circle, FileCode2, CreditCard, CheckSquare } from "lucide-react"
 export default function WeHave() { 
     const [hoveredCard, setHoveredCard] = useState(null)
   
- 
-  
     return (
         <div>
     <section className="py-16 px-4 max-w-7xl mx-auto">

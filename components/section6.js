@@ -36,14 +36,15 @@ return (
   <div className="w-full max-w-7xl px-4 ">
   <div className="w-full max-w-5xl mx-auto py-12 px-4 md:px-6 bg-white rounded-lg shadow-xl">
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-      We Simplify Software Development Process
+      {/* We Simplify Software Development Process */}
+      {section6?.title}
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {steps.map((step, index) => (
+    {section6?.item?.map((data, index)  => (
         <div key={index} className="group flex flex-col items-center">
           <div className="mb-4 transition-transform duration-300 transform group-hover:scale-110">
-            {step.icon}</div>
+            {data.icon}</div>
 
           {index < steps.length - 1 && (
             <div className="hidden lg:block absolute translate-x-[140px] mt-6">
@@ -51,8 +52,8 @@ return (
             </div>
           )}
 
-          <h3 className="text-xl font-semibold mb-3 text-gray-800">{step.title}</h3>
-          <p className="text-center text-gray-600 text-sm md:text-base">{step.description}</p>
+          <h3 className="text-xl font-semibold mb-3 text-gray-800">{data.title}</h3>
+          <p className="text-center text-gray-600 text-sm md:text-base">{data.description}</p>
         </div>
       ))}
     </div>
